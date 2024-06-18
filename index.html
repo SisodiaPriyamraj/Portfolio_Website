@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Priyam's Portfolio Website</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/d4fd301493.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="header">
@@ -26,23 +27,150 @@
       </div>
     </div>
     <!-- ---------about--------- -->
-    <div id="about">
-      <div class="container">
+<div id="about">
+    <div class="container">
         <div class="row">
           <div class="about-col-1">
             <img src="./image/footer.jpeg" />
           </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
+      <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Aspernatur ullam adipisci ea totam eaque placeat asperiores
               delectus sunt optio magni fuga, itaque veniam dolorem minima, hic
               expedita velit a autem.
             </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+              <p class="tab-links"onclick="opentab('Experience')">Experience<e/p>
+              <p class="tab-links"onclick="opentab('Education')">Education</p>
+            </div>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li><span> front end</span><br>Web Designer</li>
+                <li><span> front end</span><br>Web Designer</li>
+                <li><span> front end</span><br>Web Designer</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>10th </span><br>Web Designer</li>
+                <li><span> 12th</span><br>Web Designer</li>
+                <li><span>JIET</span><br>Web Designer</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>workshop  </span><br>Web Designer</li>
+                <li><span>projects on webdev </span><br>Web Designer</li>
+                <li><span>worked upon react as well </span><br>Web Designer</li>
+              </ul>
+            </div>
           </div>
+      </div>
+
+<!---------Services ---------->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-brands fa-codepen"></i>
+        <h2>Web designer</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Velit sint hic, ipsa dignissimos voluptatum 
+          saepe at harum assumenda doloribus, explicabo dolor illum 
+          consequatur, sed nisi animi facere. 
+          Voluptate, quia ducimus?</p>
+          <a href="#">Learn More</a>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-diagram-project"></i>
+        <h2>App designer</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Velit sint hic, ipsa dignissimos voluptatum 
+          saepe at harum assumenda doloribus, explicabo dolor illum 
+          consequatur, sed nisi animi facere. 
+          Voluptate, quia ducimus?</p>
+          <a href="#">Learn More</a>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-mask"></i>
+        <h2>UI/UX designer</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Velit sint hic, ipsa dignissimos voluptatum 
+          saepe at harum assumenda doloribus, explicabo dolor illum 
+          consequatur, sed nisi animi facere. 
+          Voluptate, quia ducimus?</p>
+          <a href="#">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- --------portfolio--------- -->
+ <div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="./image/logo_use.jpeg">
+        <div class="layer">
+          <h3>Social media application</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+            . Earum officia quae impedit quo qui laudantium,
+             hic vitae fugiat ad odio sit dignissimos
+             repudiandae cum at officiis ullam ipsa repellat provident.</p>
+          <a href="#"><i class="fa-brands fa-app-store"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="./image/logo_use.jpeg">
+        <div class="layer">
+        <h3>Social media application</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+            . Earum officia quae impedit quo qui laudantium,
+             hic vitae fugiat ad odio sit dignissimos
+             repudiandae cum at officiis ullam ipsa repellat provident.</p>
+          <a href="#"><i class="fa-brands fa-app-store"></i></a>
+      </div>
+    </div>
+      <div class="work">
+        <img src="./image/logo_use.jpeg">
+        <div class="layer">
+        <h3>Social media application</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+            . Earum officia quae impedit quo qui laudantium,
+             hic vitae fugiat ad odio sit dignissimos
+             repudiandae cum at officiis ullam ipsa repellat provident.</p>
+          <a href="#"><i class="fa-brands fa-app-store"></i></a>
         </div>
       </div>
     </div>
+  </div>
+ </div>
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+      for(tablink of tablinks){
+    tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+</script>
+
+
   </body>
 </html>
