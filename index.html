@@ -9,22 +9,24 @@
   </head>
   <body>
     <div id="header">
+      <nav >
+        <img src="./image/logo_use.jpeg" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
       <div class="container">
-        <nav>
-          <img src="./image/logo_use.jpeg" class="logo" />
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fas fa-times" onclick="closemenu()"></i>
-          </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
+        
         <div class="header-text">
-          <p>Front End Developer</p>
-          <h1>Hello, I am <span>Priyamraj</span> <br />from India</h1>
+          
+          <h1>Hello,<br> I am Priyamraj </h1>
+          <p>Full Stack Developer</p>
         </div>
       </div>
     </div>
@@ -38,16 +40,14 @@
       <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Aspernatur ullam adipisci ea totam eaque placeat asperiores
-              delectus sunt optio magni fuga, itaque veniam dolorem minima, hic
-              expedita velit a autem.
+              I am Priyamraj Singh Sisodia, a B.Tech student in Computer Science at the Jodhpur Institute of Engineering and Technology. My technical expertise spans various programming languages and technologies including Python, Flask, Machine Learning, JavaScript, React, and MySQL. 
+              I have applied my skills to develop sophisticated projects such as a movie recommendation system, an attendance system, and a breast cancer detection model using advanced machine learning techniques.
+              My professional journey includes a research trainee role at Zeetron Networks, along with conducting workshops and events at my institute, reflecting my commitment to fostering technical knowledge among my peers.
             </p>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
               <p class="tab-links"onclick="opentab('Experience')">Experience<e/p>
               <p class="tab-links"onclick="opentab('Education')">Education</p>
-            </div>
             </div>
             <div class="tab-contents active-tab" id="Skills">
               <ul>
@@ -63,6 +63,7 @@
                 <li><span>JIET</span><br>Web Designer</li>
               </ul>
             </div>
+            
             <div class="tab-contents" id="Experience">
               <ul>
                 <li><span>workshop  </span><br>Web Designer</li>
@@ -71,6 +72,9 @@
               </ul>
             </div>
           </div>
+          </div>
+            
+            
       </div>
 
 <!---------Services ---------->
@@ -175,11 +179,11 @@
         <a href="./image/Priyamraj_Resume_ Final.pdf" download class="btn btn2">Download Resume</a>
       </div>
       <div class="contact-right">
-        <form name="submit-to-google-sheet">
+        <form id="form" name="submit-to-google-sheet">
           <input type="text" name="Name" placeholder="Your Name" required>
           <input type="email" name="Email"  placeholder="Your Email" required>
           <textarea name="Message" rows="8" placeholder="Your Message for Me"></textarea>
-          <button type="submit" class="btn btn2">Submit</button>
+          <button onclick=removeEventListener() type="submit" class="btn btn2">Submit</button>
         </form>
       </div>
     </div>
@@ -206,14 +210,22 @@
 </script>
 
 <script>
-  var sidemeu = document.getElementById("sidemenu");
+  // var sidemeu = document.getElementById("sidemenu");
   
-  function openmenu(){
-    sidemeu.style.right = "0";
-  } 
-  function closemenu(){
-    sidemeu.style.right = "-200px";
-  } 
+  // function openmenu(){
+  //   sidemeu.style.right = "0";
+  // } 
+  // function closemenu(){
+  //   sidemeu.style.right = "-200px";
+  // } 
+
+  function openmenu() {
+    document.getElementById('sidemenu').style.transform = 'translateX(0)';
+}
+
+function closemenu() {
+    document.getElementById('sidemenu').style.transform = 'translateX(100%)';
+}
 
 </script>
 
@@ -224,10 +236,15 @@
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response => {console.log('Success!', response); alert('Data has been submitted'); location.reload()})
       .catch(error => console.error('Error!', error.message))
-  })
+    
+   
+});  
+
 </script>
+
+
 
   </body>
 </html>

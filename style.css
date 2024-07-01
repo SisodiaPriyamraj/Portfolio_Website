@@ -19,38 +19,55 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(./image/20230522_143755.jpg);
+    background-image: url(./image/background_image.jpg);
     background-size: cover;
     background-position: center;
 }
+
+.header-text{
+    font-size: 15px;
+}
+
+.header-text p{
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 2.5px 2.5px 8px #080808;
+    color:  #71fdc5;
+}
+
+
 .container{
     padding: 10px 10%;
 }
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 16px 20px;
+    background-color: #080808dd;
+}
+.logo {
+    max-height: 50px;
+}
 
+#sidemenu {
+    display: flex;
+    align-items: center;
 }
-.logo{
-    width: 140px;
-}
-nav ul li{
-    display: inline-block;
+
+#sidemenu li {
     list-style: none;
     margin: 10px 20px;
-
 }
 
-nav ul li a{
+#sidemenu li a {
     color: #ffffff;
-    text-decoration-style: none;
-    font-size: 18px;
+    text-decoration: none;
+    font-size: 23px;
     position: relative;
-
 }
-nav ul li a::after{
+
+#sidemenu li a::after {
     content: '';
     width: 0%;
     height: 3px;
@@ -60,20 +77,32 @@ nav ul li a::after{
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a:hover::after{
+
+#sidemenu li a:hover::after {
     width: 100%;
 }
+
+.fa-times {
+    display: none; /* Initially hidden */
+}
+
+nav > i.fa-bars{
+    display: none; /* Initially hidden */
+}
+
+
 .header-text{
     margin-top: 20%;
     font-size: 30px;
 
 }
 .header-text h1{
+    text-shadow: 2px 2px 8px #080808;
     font-size: 60px;
     margin-top: 20px;
 }
-.header-text h1 span{
-    color: aquamarine;
+.header-text h1 {
+    color: #ffffff;
 }
 
 /*----------about-----------*/
@@ -98,6 +127,11 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
 }
+
+.about-col-2 p{
+    font-size: 22px;
+}
+
 .sub-title{
     font-size: 60px;
     font-weight: 600;
@@ -141,6 +175,7 @@ nav ul li a:hover::after{
     display: none;
 }
 .tab-contents.active-tab{
+    
     display: block;
 }
 /* ----------services------- */
@@ -335,7 +370,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(./image/20230522_143755.jpg);
+        background-image: url(./image/background_image.jpg);
     }
     .header-text{
         margin-top: 100%;
@@ -344,31 +379,32 @@ nav .fas{
     .header-text h1{
         font-size: 30px;   
     }
-    nav .fas{
-        display: block;
-        font-size: 25px;
-    }    
-    nav ul{
-        background: #ff004f;
-        position: fixed;
+    
+    #sidemenu {
+        flex-direction: column;
+        position: absolute;
         top: 0;
-        right: -200px;
+        right: 0;
+        background: #333;
         width: 200px;
         height: 100vh;
-        padding-top: 50px;  
-        z-index: 2;
-        transition: right 0.5s;         
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
     }
-    nav ul li{
+
+    .fas.fa-times {
         display: block;
-        margin: 25px;
-    }
-    nav ul .fas{
         position: absolute;
-        top: 25px;
-        left: 25px;
+        top: 20px;
+        right: 20px;
         cursor: pointer;
     }
+
+    nav > i.fa-bars {
+        display: block;
+        cursor: pointer;
+    }
+
     .sub-title{
         font-size: 40px;
     }
