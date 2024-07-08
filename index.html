@@ -5,246 +5,340 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Priyam's Portfolio Website</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="https://kit.fontawesome.com/d4fd301493.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d4fd301493.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="header">
-      <nav >
-        <img src="./image/logo_use.jpeg" class="logo" />
+      <nav>
+        <img src="./image/piliyambhaiya.png" class="logo" />
         <ul id="sidemenu">
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#portfolio">My Work</a></li>
           <li><a href="#contact">Contact</a></li>
           <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="container">
-        
         <div class="header-text">
-          
-          <h1>Hello,<br> I am Priyamraj </h1>
+          <h1>
+            Hello,<br />
+            I am Priyamraj
+          </h1>
           <p>Full Stack Developer</p>
         </div>
       </div>
     </div>
     <!-- ---------about--------- -->
-<div id="about">
-    <div class="container">
+    <div id="about">
+      <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="./image/footer.jpeg" />
+            <img src="./image/skill_logo.jpg" />
           </div>
-      <div class="about-col-2">
-          <h1 class="sub-title">About Me</h1>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
             <p>
-              I am Priyamraj Singh Sisodia, a B.Tech student in Computer Science at the Jodhpur Institute of Engineering and Technology. My technical expertise spans various programming languages and technologies including Python, Flask, Machine Learning, JavaScript, React, and MySQL. 
-              I have applied my skills to develop sophisticated projects such as a movie recommendation system, an attendance system, and a breast cancer detection model using advanced machine learning techniques.
-              My professional journey includes a research trainee role at Zeetron Networks, along with conducting workshops and events at my institute, reflecting my commitment to fostering technical knowledge among my peers.
+              I am Priyamraj Singh Sisodia, currently pursuing a B.Tech in
+              Computer Science at Jodhpur Institute of Engineering and
+              Technology with a CGPA of 8.47. I have gained substantial
+              experience through internships and training in Data Science,
+              Machine Learning, and ERP systems with Praxon Technovations,
+              Zeetron Networks, and SAS Company. My projects include developing
+              a movie recommendation system, a dynamic portfolio website, a
+              comprehensive college management system, and a Netflix-like
+              streaming platform. I possess strong technical skills in Python,
+              Pandas, Matplotlib, Numpy, scikit-learn(tfidfvectorizer), HTML,
+              CSS, JavaScript, and MySQL. Additionally, I have achieved
+              certifications in SAS Visual Analytics, SAS Programming, and
+              Generative AI, and have held leadership roles in various college
+              events and sports teams.
             </p>
             <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-              <p class="tab-links"onclick="opentab('Experience')">Experience<e/p>
-              <p class="tab-links"onclick="opentab('Education')">Education</p>
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience<e/p>
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
             </div>
             <div class="tab-contents active-tab" id="Skills">
               <ul>
-                <li><span> front end</span><br>Web Designer</li>
-                <li><span> front end</span><br>Web Designer</li>
-                <li><span> front end</span><br>Web Designer</li>
+                <li>
+                  <span> FrontEnd Develpment</span><br />HTML, CSS, JavaScript
+                </li>
+                <li>
+                  <span> BackEnd Develpment</span><br />Python, MySQL, pHp
+                </li>
+                <li>
+                  <span> Machine Learning</span><br />Pandas, Numpy, Matplotlib,
+                  Scikit-Learn
+                </li>
               </ul>
             </div>
             <div class="tab-contents" id="Education">
               <ul>
-                <li><span>10th </span><br>Web Designer</li>
-                <li><span> 12th</span><br>Web Designer</li>
-                <li><span>JIET</span><br>Web Designer</li>
+                <li><span>10th (85.20%)</span><br />Happy Hours School</li>
+                <li><span> 12th (87%)</span><br />Happy Hours School</li>
+                <li><span>B.Tech</span><br />Jodhpur Institue of Engineering and Technology</li>
               </ul>
             </div>
-            
+
             <div class="tab-contents" id="Experience">
               <ul>
-                <li><span>workshop  </span><br>Web Designer</li>
-                <li><span>projects on webdev </span><br>Web Designer</li>
-                <li><span>worked upon react as well </span><br>Web Designer</li>
+                <li><span>Internship</span><br />Praxon Technovations</li>
+                <li><span>Internship</span><br />Calanjiyam Consultancies</li>
+                <li><span>Training Internship </span><br />Zeetron Networks</li>
+                <li><span>Training</span><br />SAS Company</li>
               </ul>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!---------Services ---------->
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-brands fa-codepen"></i>
+              <h2>Praxon Technovations</h2>
+              <p>
+                I am currently interning at Praxon Technovations, where I have
+                diligently learned and mastered ERPNext software. Alongside a
+                dedicated group of individuals, I developed and implemented a
+                fully functional ERP system for Little Millennium, a chain of
+                schools. This system is now operational and running smoothly
+                under our supervision. Our ERP solution streamlines
+                administrative tasks, improves communication, and enhances
+                overall efficiency within the schools.
+              </p>
+              <a
+                href="https://docs.erpnext.com/docs/user/manual/en/introduction"
+                >Learn More</a
+              >
+            </div>
+
+            <div>
+              <i class="fa-solid fa-diagram-project"></i>
+              <h2>Calanjiyam Consultancies</h2>
+              <p>
+                I successfully completed a 10-week internship at Calanjiyam
+                Consultancies and Technologies, focusing on full stack web
+                application development using HTML, CSS, JavaScript, JQuery,
+                PHP, and MySQL. During this internship, I contributed to the
+                development of a comprehensive College Management System (CMS),
+                delivering assignments on time and contributing to the project's
+                success.
+              </p>
+              <a
+                href="https://github.com/SisodiaPriyamraj/college-management-system"
+                >Learn More</a
+              >
+            </div>
+
+            <div>
+              <i class="fa-solid fa-mask"></i>
+              <h2>Zeetron Networks</h2>
+              <p>
+                I completed my internship training at Zeetron Networks, focusing
+                on Data Science and Machine Learning. During this time, I
+                developed a sophisticated movie recommendation system using
+                state-of-the-art machine learning libraries like Python,
+                scikit-learn, NumPy, and Pandas. This project further honed my
+                skills in data analysis and algorithm development, allowing me
+                to deliver an effective and user-friendly solution.
+              </p>
+              <a
+                href="https://github.com/SisodiaPriyamraj/Recommendation_System"
+                >Learn More</a
+              >
+            </div>
           </div>
-            
-            
-      </div>
-
-<!---------Services ---------->
-<div id="services">
-  <div class="container">
-    <h1 class="sub-title">My Services</h1>
-    <div class="services-list">
-      <div>
-        <i class="fa-brands fa-codepen"></i>
-        <h2>Web designer</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Velit sint hic, ipsa dignissimos voluptatum 
-          saepe at harum assumenda doloribus, explicabo dolor illum 
-          consequatur, sed nisi animi facere. 
-          Voluptate, quia ducimus?</p>
-          <a href="#">Learn More</a>
-      </div>
-
-      <div>
-        <i class="fa-solid fa-diagram-project"></i>
-        <h2>App designer</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Velit sint hic, ipsa dignissimos voluptatum 
-          saepe at harum assumenda doloribus, explicabo dolor illum 
-          consequatur, sed nisi animi facere. 
-          Voluptate, quia ducimus?</p>
-          <a href="#">Learn More</a>
-      </div>
-
-      <div>
-        <i class="fa-solid fa-mask"></i>
-        <h2>UI/UX designer</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Velit sint hic, ipsa dignissimos voluptatum 
-          saepe at harum assumenda doloribus, explicabo dolor illum 
-          consequatur, sed nisi animi facere. 
-          Voluptate, quia ducimus?</p>
-          <a href="#">Learn More</a>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- --------portfolio--------- -->
- <div id="portfolio">
-  <div class="container">
-    <h1 class="sub-title">My Work</h1>
-    <div class="work-list">
-      <div class="work">
-        <img src="./image/logo_use.jpeg">
-        <div class="layer">
-          <h3>Social media application</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
-            . Earum officia quae impedit quo qui laudantium,
-             hic vitae fugiat ad odio sit dignissimos
-             repudiandae cum at officiis ullam ipsa repellat provident.</p>
-          <a href="#"><i class="fa-brands fa-app-store"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="./image/logo_use.jpeg">
-        <div class="layer">
-        <h3>Social media application</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
-            . Earum officia quae impedit quo qui laudantium,
-             hic vitae fugiat ad odio sit dignissimos
-             repudiandae cum at officiis ullam ipsa repellat provident.</p>
-          <a href="#"><i class="fa-brands fa-app-store"></i></a>
-      </div>
-    </div>
-      <div class="work">
-        <img src="./image/logo_use.jpeg">
-        <div class="layer">
-        <h3>Social media application</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
-            . Earum officia quae impedit quo qui laudantium,
-             hic vitae fugiat ad odio sit dignissimos
-             repudiandae cum at officiis ullam ipsa repellat provident.</p>
-          <a href="#"><i class="fa-brands fa-app-store"></i></a>
         </div>
       </div>
     </div>
-    <a href="#" class="btn">See More</a>
-  </div>
- </div>
 
-<!-- ----------contact---------- -->
- <div id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="contact-left">
-        <h1 class="sub-title">Contact Me</h1>
-        <p><i class="fa-solid fa-paper-plane"></i>contact@chinumailing.com</p>
-        <p><i class="fa-solid fa-phone-volume"></i>1234567890</p>
-        <div class="social-icons">
-          <a href="https://www.instagram.com/priyamrajsinghsisodia_114/"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.instagram.com/priyamrajsinghsisodia_114/"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.instagram.com/priyamrajsinghsisodia_114/"><i class="fa-brands fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/in/priyam-raj-singh-sisodia-a756a3225/"><i class="fa-brands fa-linkedin-in"></i></a>
+    <!-- --------My Work--------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./image/project_2.jpg" />
+            <div class="layer">
+              <h3>College Management System(CMS)</h3>
+              <p>
+                Designed and Contributed in a robust college management system
+                to streamline administration, manage student records, track
+                attendance, and generate reports, using PHP, HTML, CSS, and
+                MySQL.
+              </p>
+              <a href="https://github.com/SisodiaPriyamraj/college-management-system"></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./image/project_1.jpg" />
+            <div class="layer">
+              <h3>Movie Bot</h3>
+              <p>
+                The Movie Bot project, which I developed using the MERN stack
+                (MongoDB, Express.js, React.js, Node.js), offers users a
+                Netflix-like streaming experience. This platform includes a vast
+                collection of movies and TV shows, providing seamless streaming
+                and enhancing the overall viewing experience.
+              </p>
+               <a href="https://github.com/SisodiaPriyamraj/Movie_Bot"></a> 
+            </div>
+          </div>
+          <div class="work">
+            <img src="./image/project_3.png" />
+            <div class="layer">
+              <h3>Movie Recommendation System</h3>
+              <p>
+                I have developed a recommendation system using
+                Python along with machine learning libraries
+                such as scikit-learn, NumPy, and Pandas.<!--  This system leverages
+                 advanced algorithms to provide personalized recommendations
+                based on user preferences and historical data. --> 
+              </p>
+                <a href="https://github.com/SisodiaPriyamraj/Recommendation_System"></a> 
+            </div>
+          </div>
         </div>
-        <a href="./image/Priyamraj_Resume_ Final.pdf" download class="btn btn2">Download Resume</a>
-      </div>
-      <div class="contact-right">
-        <form id="form" name="submit-to-google-sheet">
-          <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="email" name="Email"  placeholder="Your Email" required>
-          <textarea name="Message" rows="8" placeholder="Your Message for Me"></textarea>
-          <button onclick=removeEventListener() type="submit" class="btn btn2">Submit</button>
-        </form>
+        <a
+          href="https://github.com/SisodiaPriyamraj?tab=repositories"
+          class="btn"
+          >See More Projects</a
+        >
       </div>
     </div>
-  </div>
-  <div class="copyright">
-    <p>This content belong to <i class="fa-regular fa-copyright"></i> Priyamraj</p>
-  </div>
- </div>
 
-<script>
-  var tablinks = document.getElementsByClassName("tab-links");
-  var tabcontents = document.getElementsByClassName("tab-contents");
-  function opentab(tabname){
-      for(tablink of tablinks){
-    tablink.classList.remove("active-link");
-    }
-    for(tabcontent of tabcontents){
-    tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-  }
+    <!-- ----------contact---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              >priyamraj.21jics056@jietjodhpur.ac.in
+            </p>
+            <p><i class="fa-solid fa-phone-volume"></i>6367452221</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/priyamrajsinghsisodia_114/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
 
-</script>
+              <a href="https://github.com/SisodiaPriyamraj"
+                ><i class="fa-brands fa-github"></i
+              ></a>
 
-<script>
-  // var sidemeu = document.getElementById("sidemenu");
-  
-  // function openmenu(){
-  //   sidemeu.style.right = "0";
-  // } 
-  // function closemenu(){
-  //   sidemeu.style.right = "-200px";
-  // } 
+              <a href="https://github.com/SisodiaPriyamraj"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
 
-  function openmenu() {
-    document.getElementById('sidemenu').style.transform = 'translateX(0)';
-}
+              <a
+                href="https://www.linkedin.com/in/priyam-raj-singh-sisodia-a756a3225/"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+            <a
+              href="./Resume_ArguSoft_ Final.pdf"
+              download
+              class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form id="form" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="8"
+                placeholder="Your Message for Me"
+              ></textarea>
+              <button
+                onclick="removeEventListener()"
+                type="submit"
+                class="btn btn2"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Portfolio of Priyamraj Singh Sisodia
+        </p>
+      </div>
+    </div>
 
-function closemenu() {
-    document.getElementById('sidemenu').style.transform = 'translateX(100%)';
-}
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
 
-</script>
+    <script>
+      // var sidemeu = document.getElementById("sidemenu");
 
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxnNbHEHutfnyDmaT6V1r_xuiJu56VSdcHuCwZ3AApLEeXrhUxAIyJyN6xao9Ii7DIN/exec'
-  const form = document.forms['submit-to-google-sheet']
+      // function openmenu(){
+      //   sidemeu.style.right = "0";
+      // }
+      // function closemenu(){
+      //   sidemeu.style.right = "-200px";
+      // }
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {console.log('Success!', response); alert('Data has been submitted'); location.reload()})
-      .catch(error => console.error('Error!', error.message))
-    
-   
-});  
+      function openmenu() {
+        document.getElementById("sidemenu").style.transform = "translateX(0)";
+      }
 
-</script>
+      function closemenu() {
+        document.getElementById("sidemenu").style.transform =
+          "translateX(100%)";
+      }
+    </script>
 
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxnNbHEHutfnyDmaT6V1r_xuiJu56VSdcHuCwZ3AApLEeXrhUxAIyJyN6xao9Ii7DIN/exec";
+      const form = document.forms["submit-to-google-sheet"];
 
-
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            console.log("Success!", response);
+            alert("Data has been submitted");
+            location.reload();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
